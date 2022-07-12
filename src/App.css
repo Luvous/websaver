@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+:root{
+  --clr-black: #000;
+  --clr-white: #F6F6F6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.webcard{
+  overflow: hidden;
+  background: var(--clr-black);
+  color: var(--clr-white);
+  width: 300px;
+  height: 85px;
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.textcover{
+  background: rgba(0, 0, 0, 10%);
+  backdrop-filter: blur(5px);
+  width: 15%;
+  height: 100%;
+  z-index: 30;
+  border-radius: 0px 10px 10px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.webcard-icon{
+  width: 20%;
+  margin: 5%;
+  border-radius: 10px;
+}
+
+.webcard-name{
+  margin: 0;
+}
+
+.webcard-tags{
+  margin: 0;
+}
+
+.cardsholder{
+  display: flex;
+  padding: 3% 8%;
 }
